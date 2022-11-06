@@ -4,7 +4,8 @@
 	<!-- <HowToCreateAnArbitraryLineWithText /> -->
 	<!-- <HowFilterDatesFromDatabase /> -->
 	<!-- <HowCreateCustomCandlestick /> -->
-	<HowCreateScrollableHorizontalBarChartWithFixedXScale />
+	<!-- <HowCreateScrollableHorizontalBarChartWithFixedXScale /> -->
+  <AdvanceGantChartJSSeries  />
 </template>
 
 <script setup>
@@ -14,6 +15,7 @@ import HowToCreateAnArbitraryLineWithText from './components/HowToCreateAnArbitr
 import HowFilterDatesFromDatabase from './components/HowFilterDatesFromDatabase.vue';
 import HowCreateCustomCandlestick from './components/HowCreateCustomCandlestick.vue';
 import HowCreateScrollableHorizontalBarChartWithFixedXScale from './components/HowCreateScrollableHorizontalBarChartWithFixedXScale.vue';
+import AdvanceGantChartJSSeries from './components/AdvanceGantChartJSSeries.vue';
 </script>
 
 <style></style>
