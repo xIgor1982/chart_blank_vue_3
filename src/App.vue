@@ -5,7 +5,8 @@
 	<!-- <HowFilterDatesFromDatabase /> -->
 	<!-- <HowCreateCustomCandlestick /> -->
 	<!-- <HowCreateScrollableHorizontalBarChartWithFixedXScale /> -->
-  <AdvanceGantChartJSSeries  />
+  <!-- <AdvanceGantChartJSSeries /> -->
+  <CreateScrollableHorizontalBarFixedXScale />
 </template>
 
 <script setup>
@@ -16,6 +17,7 @@ import HowFilterDatesFromDatabase from './components/HowFilterDatesFromDatabase.
 import HowCreateCustomCandlestick from './components/HowCreateCustomCandlestick.vue';
 import HowCreateScrollableHorizontalBarChartWithFixedXScale from './components/HowCreateScrollableHorizontalBarChartWithFixedXScale.vue';
 import AdvanceGantChartJSSeries from './components/AdvanceGantChartJSSeries.vue';
+import CreateScrollableHorizontalBarFixedXScale from './components/CreateScrollableHorizontalBarFixedXScale.vue';
 </script>
 
 <style></style>
