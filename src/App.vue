@@ -6,7 +6,8 @@
 	<!-- <HowCreateCustomCandlestick /> -->
 	<!-- <HowCreateScrollableHorizontalBarChartWithFixedXScale /> -->
   <!-- <AdvanceGantChartJSSeries /> -->
-  <CreateScrollableHorizontalBarFixedXScale />
+  <!-- <CreateScrollableHorizontalBarFixedXScale /> -->
+  <HowToDrawVerticalLinesByClickingTheDataPoints />
 </template>
 
 <script setup>
@@ -18,6 +19,7 @@ import HowCreateCustomCandlestick from './components/HowCreateCustomCandlestick.
 import HowCreateScrollableHorizontalBarChartWithFixedXScale from './components/HowCreateScrollableHorizontalBarChartWithFixedXScale.vue';
 import AdvanceGantChartJSSeries from './components/AdvanceGantChartJSSeries.vue';
 import CreateScrollableHorizontalBarFixedXScale from './components/CreateScrollableHorizontalBarFixedXScale.vue';
+import HowToDrawVerticalLinesByClickingTheDataPoints from './components/HowToDrawVerticalLinesByClickingTheDataPoints.vue';
 </script>
 
 <style></style>
