@@ -13,6 +13,24 @@
 				:options="options2"
 				:plugins="plugins2"
 			/>
+			<table class="table-design">
+				<thead>
+					<tr>
+						<th>Название</th>
+						<th>Значение</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="chart1">
+						<td>...</td>
+						<td>...</td>
+					</tr>
+					<tr class="chart2">
+						<td>...</td>
+						<td>...</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 	</div>
 </template>
@@ -124,4 +142,17 @@ const plugins2 = ref({});
 	border: solid 3px rgba(255, 26, 104, 1);
 	background: white;
 }
+.table-design {
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin-top: 10px;
+	width: 100%;
+}
+
+.table-design th,
+.table-design tr,
+.table-design td {	
+	border: 1px solid black;
+}
+
 </style>
