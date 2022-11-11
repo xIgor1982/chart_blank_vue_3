@@ -17,7 +17,7 @@
     "lodash": "^4.17.21",
     "luxon": "^3.1.0",
     "roboto-fontface": "*",
-    "vue": "^3.2.42",
+    "vue": "^3.2.44",
     "vue-chart-3": "^3.1.8",
     "vuetify": "npm:@vuetify/nightly@next",
     "webfontloader": "^1.0.0"

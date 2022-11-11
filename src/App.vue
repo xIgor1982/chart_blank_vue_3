@@ -5,9 +5,10 @@
 	<!-- <HowFilterDatesFromDatabase /> -->
 	<!-- <HowCreateCustomCandlestick /> -->
 	<!-- <HowCreateScrollableHorizontalBarChartWithFixedXScale /> -->
-  <!-- <AdvanceGantChartJSSeries /> -->
-  <!-- <CreateScrollableHorizontalBarFixedXScale /> -->
-  <HowToDrawVerticalLinesByClickingTheDataPoints />
+	<!-- <AdvanceGantChartJSSeries /> -->
+	<!-- <CreateScrollableHorizontalBarFixedXScale /> -->
+	<!-- <HowToDrawVerticalLinesByClickingTheDataPoints /> -->
+	<DisplayClickedData />
 </template>
 
 <script setup>
@@ -20,6 +21,7 @@ import HowCreateScrollableHorizontalBarChartWithFixedXScale from './components/H
 import AdvanceGantChartJSSeries from './components/AdvanceGantChartJSSeries.vue';
 import CreateScrollableHorizontalBarFixedXScale from './components/CreateScrollableHorizontalBarFixedXScale.vue';
 import HowToDrawVerticalLinesByClickingTheDataPoints from './components/HowToDrawVerticalLinesByClickingTheDataPoints.vue';
+import DisplayClickedData from './components/DisplayClickedData.vue';
 </script>
 
 <style></style>
