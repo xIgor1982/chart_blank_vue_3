@@ -8,7 +8,8 @@
 	<!-- <AdvanceGantChartJSSeries /> -->
 	<!-- <CreateScrollableHorizontalBarFixedXScale /> -->
 	<!-- <HowToDrawVerticalLinesByClickingTheDataPoints /> -->
-	<DisplayClickedData />
+	<!-- <DisplayClickedData /> -->
+	<GetMouseClickCoordinates />
 </template>
 
 <script setup>
@@ -22,6 +23,7 @@ import AdvanceGantChartJSSeries from './components/AdvanceGantChartJSSeries.vue'
 import CreateScrollableHorizontalBarFixedXScale from './components/CreateScrollableHorizontalBarFixedXScale.vue';
 import HowToDrawVerticalLinesByClickingTheDataPoints from './components/HowToDrawVerticalLinesByClickingTheDataPoints.vue';
 import DisplayClickedData from './components/DisplayClickedData.vue';
+import GetMouseClickCoordinates from './components/GetMouseClickCoordinates.vue';
 </script>
 
 <style></style>

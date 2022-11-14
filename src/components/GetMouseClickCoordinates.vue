@@ -1,10 +1,14 @@
 <template>
 	<div class="chartMenu">
-		<p>WWW.CHARTJS3.COM (Chart JS 3.9.1)</p>
+		<p>Получаем координаты по щелчку мыши в диаграмме JS</p>
 	</div>
 	<div class="chartCard">
 		<div class="chartBox">
 			<BarChart :chartData="testData" :options="options" :plugins="plugins" />
+			<div>
+				<p>xCoord = {{ xCoord }}</p>
+				<p>yCoord = {{ yCoord }}</p>
+			</div>
 		</div>
 	</div>
 </template>
@@ -17,6 +21,8 @@ import { Chart, registerables } from 'chart.js';
 Chart.register(...registerables);
 
 const data = ref();
+const xCoord = ref(0);
+const yCoord = ref(0);
 
 data.value = [18, 12, 6, 9, 12, 3, 9];
 
@@ -55,7 +61,25 @@ const options = ref({
 		},
 	},
 });
-const plugins = ref([]);
+
+const clickChartCoord = {
+	id: 'clickChartCoord',
+	afterEvent(chart, args, pluginOptions) {
+		// получаем координаты х и у при движении курсора над графиком
+		const xCursor = args.event.x;
+		const yCursor = args.event.y;
+		// Получаем тип события
+		const click = args.event.type;
+		if(click === 'click'){
+			xCoord.value = xCursor;
+			yCoord.value = yCursor;
+			// Получить данные графика
+			
+		}
+	},
+};
+
+const plugins = ref([clickChartCoord]);
 </script>
 
 <style scope>
