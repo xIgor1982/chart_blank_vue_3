@@ -1,10 +1,25 @@
 <template>
 	<div class="chartMenu">
-		<p>Получаем координаты по щелчку мыши в диаграмме JS</p>
+		<p>
+			Получаем координаты по щелчку мыши в диаграмме JS и выводим данные о
+			графике в таблице
+		</p>
 	</div>
 	<div class="chartCard">
 		<div class="chartBox">
 			<BarChart :chartData="testData" :options="options" :plugins="plugins" />
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Label</th>
+						<th>Value</th>
+					</tr>
+				</thead>
+				<tbody>
+					<td>...</td>
+					<td>...</td>
+				</tbody>
+			</table>
 			<div>
 				<p>xCoord = {{ xCoord }}</p>
 				<p>yCoord = {{ yCoord }}</p>
@@ -70,11 +85,13 @@ const clickChartCoord = {
 		const yCursor = args.event.y;
 		// Получаем тип события
 		const click = args.event.type;
-		if(click === 'click'){
+		if (click === 'click') {
 			xCoord.value = xCursor;
 			yCoord.value = yCursor;
 			// Получить данные графика
-			
+			const curData = chart._metasets[0];
+			console.log('curData');
+			console.dir(curData);
 		}
 	},
 };
@@ -112,5 +129,19 @@ const plugins = ref([clickChartCoord]);
 	border-radius: 20px;
 	border: solid 3px rgba(255, 26, 104, 1);
 	background: white;
+}
+.table {
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.table,
+.table tr,
+.table th,
+.table td {
+	padding: 10px;
+	border: 1px solid black;
+	border-collapse: collapse;
 }
 </style>
